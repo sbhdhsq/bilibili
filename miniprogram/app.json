@@ -4,12 +4,39 @@
     "pages/partition/partition",
     "pages/my/my"
   ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "哔哩哔哩",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#ff0097",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "主页",
+        "iconPath": "images/tab/homePage.png",
+        "selectedIconPath": "images/tab/homePage-active.png"
+      },
+      {
+        "pagePath": "pages/partition/partition",
+        "text": "分区",
+        "iconPath": "images/tab/partition.png",
+        "selectedIconPath": "images/tab/partition-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tab/my.png",
+        "selectedIconPath": "images/tab/my-active.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
