@@ -7,12 +7,20 @@ Page({
   data: {
 
   },
+  onSearch(event) {
+    console.log(event.detail.keyword)
+    this.setData({
+      blogList: []
+    })
+    keyword = event.detail.keyword
+    this._loadBlogList(0)
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad(options){
+    this._loadBlogList()
   },
 
   /**

@@ -1,4 +1,13 @@
-<!--pages/homePage/homePage.wxml-->
+ <text>主页</text>
+<!--顶部搜索区-->
+<view class="header">
+     <view class="left" bind:tap="onPublish">
+ <!--左侧的发布图标-->
+        <i class="iconfont icon-sousuo"></i>
+ </view>
 
-    <text>主页</text>
-
+ <view class="right">
+ <!--引入搜索组件，接受组件回传的search方法-->
+   <h-search bind:search="onSearch" />
+ </view>
+</view>
